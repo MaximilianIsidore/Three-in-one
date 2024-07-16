@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>All In One App</title>
+</head>
+<body>
+    <header class="stable">
+        <h1>Three In One Web-App</h1>
+    </header>
+
+    <nav>
+        <span id="uc">unit converter</span>
+        <span id="cal">Calculator</span>
+        <span id="game">Game</span>
+    </nav>
+
+    <main>
+        <section id="unit-converter">
+            <div class="container">
+                <h1>Unit Converter</h1>
+                <div class="converter">
+                    <input type="number" id="inputValue" placeholder="Enter value">
+                    <select id="inputUnit">
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="miles">Miles</option>
+                        <option value="feet">Feet</option>
+                    </select>
+                    <button id="unit_conv">Convert</button>
+                    <select id="outputUnit">
+                        <option value="meters">Meters</option>
+                        <option value="kilometers">Kilometers</option>
+                        <option value="miles">Miles</option>
+                        <option value="feet">Feet</option>
+                    </select>
+                    <input type="text" id="outputValue" placeholder="Result" readonly>
+                </div>
+            </div>
+        </section>
+
+        <section id="calculator">
+            <div class="calculator">
+                <input type="text" id="display" disabled>
+                <div class="buttons">
+                    <button onclick="appendToDisplay('7')">7</button>
+                    <button onclick="appendToDisplay('8')">8</button>
+                    <button onclick="appendToDisplay('9')">9</button>
+                    <button onclick="appendToDisplay('/')">/</button>
+                    <button onclick="appendToDisplay('4')">4</button>
+                    <button onclick="appendToDisplay('5')">5</button>
+                    <button onclick="appendToDisplay('6')">6</button>
+                    <button onclick="appendToDisplay('*')">*</button>
+                    <button onclick="appendToDisplay('1')">1</button>
+                    <button onclick="appendToDisplay('2')">2</button>
+                    <button onclick="appendToDisplay('3')">3</button>
+                    <button onclick="appendToDisplay('-')">-</button>
+                    <button onclick="appendToDisplay('0')">0</button>
+                    <button onclick="appendToDisplay('.')">.</button>
+                    <button onclick="calculate()">=</button>
+                    <button onclick="appendToDisplay('+')">+</button>
+                    <button onclick="clearDisplay()">C</button>
+                </div>
+            </div>
+        </section>
+
+        <section id="Game">
+            <div class="gm-container">
+                <h1>Dice Roller</h1>
+                <input type="number" id="guessnum" placeholder="Guess value">
+                <div class="dice" id="dice">🎲</div>
+                <button id="rollButton">Roll Dice</button>
+            </div>
+            <p id="result"></p>
+        </section>
+    </main>
+    
+    
+</body>
+<script src="script.js"></script>
+</html>

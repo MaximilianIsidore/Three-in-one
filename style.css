@@ -1,0 +1,188 @@
+*{
+    margin:0;
+    padding:0;
+}
+#calculator, #Game{
+    display: none;
+}
+
+header{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    height: 10vh;
+    background-color: #007BFF;
+    color: white;
+}
+nav{
+    display: flex;
+    justify-content: space-evenly;
+    height: 15vh;
+    align-items: center;
+}
+
+nav>span{
+    font-size: 1.5em;
+    padding: 1rem;
+    border-radius: 0.5em;
+}
+
+nav>span:hover{
+    background-color: #ccc;
+}
+
+footer{
+    display: fixed;
+    margin-bottom: 0;
+}
+
+/*unit converter*/
+
+#unit-converter {
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 70vh;
+    margin: 0;
+}
+
+#unit-converter>.container {
+    background: white;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#unit-converter>.container>.converter {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+#unit-converter>.container>.converter>input, #unit-converter>.container>.converter>select, #unit-converter>.container>.converter>button {
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    border: 1px solid #ccc;
+}
+
+#unit-converter>.container>.converter>button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    cursor: pointer;
+}
+
+#unit-converter>.container>.converter>button:hover {
+    background-color: #0056b3;
+}
+
+#unit-converter>.container>.converter>input[readonly] {
+    background-color: #f4f4f4;
+}
+
+/*calculator*/
+
+#calculator {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.calculator {
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    padding: 20px;
+    background-color: #fff;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#display {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 10px;
+    font-size: 1.5em;
+    text-align: right;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+.buttons {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+}
+
+button {
+    padding: 20px;
+    font-size: 1.5em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    background-color: #f0a251;
+    transition: background-color 0.3s;
+}
+
+button:hover {
+    background-color: #ef750f;
+}
+
+
+/*game*/
+#Game {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+    height: 100vh;
+    background-color: #f0f0f0;
+    margin: 0;
+    font-family: Arial, sans-serif;
+}
+
+.gm-container {
+    text-align: center;
+    padding: 1em;
+}
+
+.dice {
+    font-size: 5em;
+    margin-bottom: 20px;
+}
+
+#gm-container>button {
+    padding: 10px 20px;
+    font-size: 1em;
+    cursor: pointer;
+    border: none;
+    background-color: #4CAF50;
+    color: white;
+    border-radius: 5px;
+}
+
+#gm-container>button:hover {
+    background-color: #45a049;
+}
+
+#guessnum{
+    margin-top:2em;
+    width: 300px;
+    padding: 10px;
+    font-size: 1em;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+}
+
+#result{
+    font-size:  2em;
+    text-align: center;
+    padding: 2em;
+}
+
